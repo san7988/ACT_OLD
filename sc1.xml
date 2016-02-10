@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system>
+<states>
+<state id="active">
+	
+	<transition guard="" action="" trigger="" target=""/> 	
+	<transition guard="" action="" trigger="" target=""/>
+	<transition guard="" action="" trigger="" target=""/>
+	<transition guard="" action="" trigger="" target=""/>
+</state>
+
+<state id="inactive">
+	
+	<transition guard="" action="" trigger="" target=""/> 	
+	<transition guard="" action="" trigger="" target=""/>
+	<transition guard="" action="" trigger="" target=""/>
+	<transition guard="" action="" trigger="" target=""/>
+</state>
+
+<state id="login">
+	<transition guard="" action="" trigger="" target="register"/> 	
+	<transition guard="" action="" trigger="" target=""/>
+	<transition guard="" action="" trigger="" target=""/>
+	<transition guard="" action="" trigger="" target=""/>
+</state>
+
+<state id="register">
+	<transition guard="" action="" trigger="" target=""/> 	
+	<transition guard="" action="" trigger="" target=""/>
+	<transition guard="" action="" trigger="" target=""/>
+	<transition guard="" action="" trigger="" target=""/>
+</state>
+
+<state id="adminPanel">
+	<transition guard="" action="" trigger="" target=""/> 	
+	<transition guard="" action="" trigger="" target=""/>
+	<transition guard="" action="" trigger="" target=""/>
+	<transition guard="" action="" trigger="" target=""/>
+</state>
+
+<state id="myRequest">
+	<transition guard="" action="" trigger="" target=""/> 	
+	<transition guard="" action="" trigger="" target=""/>
+	<transition guard="" action="" trigger="" target=""/>
+	<transition guard="" action="" trigger="" target=""/>
+</state>
+
+<state id="requestNew">
+	<transition guard="" action="" trigger="" target=""/> 	
+	<transition guard="" action="" trigger="" target=""/>
+	<transition guard="" action="" trigger="" target=""/>
+	<transition guard="" action="" trigger="" target=""/>
+</state>
+<state id="changePassword">
+	<transition guard="nil" action="logged_user:=(logged_user-uname)" trigger="logout.clicked" target="login"/> 	
+	<transition guard="nil" action="nil" trigger="tab3.clicked" target="requestNew"/>
+	<transition guard="nil" action="nil" trigger="tab6.clicked" target="myRequest"/>
+	<transition guard="isAdmin:=TRUE" action="nil" trigger="tab5.clicked" target="adminPanel"/>
+</state>
+</states>
+
+<!-- <transitions>
+	<Transition1>
+		<Source>login</Source>
+		<DestinationState>register</DestinationState>
+		<Guard></Guard>
+		<Action></Action>
+		<Trigger></Trigger>
+	</Transition1>
+
+</transitions>
+-->
+</system>
