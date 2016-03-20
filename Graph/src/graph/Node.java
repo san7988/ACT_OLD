@@ -10,10 +10,17 @@ public class Node implements INode {
 	/*private String name,desc;
 	private String[] input;
 	private String[] clickable;*/
+<<<<<<< HEAD
+	protected IGraph mGraph;													//Graph it belongs to
+	protected List<IEdge> mOutgoingEdgeList = new ArrayList<IEdge>();			//List of out edges
+	protected List<IEdge> mIncomingEdgeList = new ArrayList<IEdge>();			//List of in edges
+	protected int id;
+=======
 	private IGraph mGraph;													//Graph it belongs to
 	private List<IEdge> mOutgoingEdgeList = new ArrayList<IEdge>();			//List of out edges
 	private List<IEdge> mIncomingEdgeList = new ArrayList<IEdge>();			//List of in edges
 	private int id;
+>>>>>>> 9f240fb4e33939fb8a58bcf5298284eed55239e0
 	private static int ID=0;
 
 	public Node(IGraph graph) {			//add Node to graph. Make a graph object
@@ -22,10 +29,17 @@ public class Node implements INode {
 			graph.addNode(this);		
 			mGraph = graph;
 		}
+<<<<<<< HEAD
+		//else{
+			//graph = new Graph(this);
+			//mGraph = graph;		//done by constructor
+		//}
+=======
 		else {
 			graph = new Graph(this);
 			//mGraph = graph;		//done by constructor
 		}
+>>>>>>> 9f240fb4e33939fb8a58bcf5298284eed55239e0
 	}
 
 		@Override

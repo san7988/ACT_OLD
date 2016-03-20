@@ -11,6 +11,16 @@ import graph.INode;
  */
 public class Edge implements IEdge {
 
+<<<<<<< HEAD
+	protected IGraph mGraph;		
+	protected INode mTail; 		//source
+	protected INode mHead; 		//target
+	protected int edgeId;
+	/*private String trigger;
+	private ArrayList<String> guard;
+	private String action;*/
+	protected static int EDGEID = 0;
+=======
 	private IGraph mGraph;		
 	private INode mTail; 		//source
 	private INode mHead; 		//target
@@ -19,6 +29,7 @@ public class Edge implements IEdge {
 	private ArrayList<String> guard;
 	private String action;*/
 	private static int EDGEID = 0;
+>>>>>>> 9f240fb4e33939fb8a58bcf5298284eed55239e0
 		
 	//private String mId;
 	

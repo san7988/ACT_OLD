@@ -10,9 +10,15 @@ import java.util.List;
 
 public class Graph implements IGraph {
 
+<<<<<<< HEAD
+	protected INode mRoot;
+	protected List<INode> mNodes = new ArrayList<INode>();
+	protected List<IEdge> mEdges = new ArrayList<IEdge>();
+=======
 	private INode mRoot;
 	private List<INode> mNodes = new ArrayList<INode>();
 	private List<IEdge> mEdges = new ArrayList<IEdge>();
+>>>>>>> 9f240fb4e33939fb8a58bcf5298284eed55239e0
 
 	public Graph(INode root) {
 		this.mNodes.add(root);
@@ -24,8 +30,23 @@ public class Graph implements IGraph {
 	public INode getRoot() {
 		return this.mRoot;
 	}
+<<<<<<< HEAD
+	
+	@Override
+	public List<INode> getNodeSet() {
+		return this.mNodes;
+	}
 
 	@Override
+	public List<IEdge> getEdgeSet() {
+		return this.mEdges;
+	}
+	
+	@Override
+=======
+
+	@Override
+>>>>>>> 9f240fb4e33939fb8a58bcf5298284eed55239e0
 	public INode addNode(INode node) {
 		if(this.mNodes.contains(node)) {
 			return null;
@@ -36,11 +57,14 @@ public class Graph implements IGraph {
 	}
 
 	@Override
+<<<<<<< HEAD
+=======
 	public boolean hasNode(INode node) {
 		return this.mNodes.contains(node);
 	}
 
 	@Override
+>>>>>>> 9f240fb4e33939fb8a58bcf5298284eed55239e0
 	public INode deleteNode(INode node) {
 		if(!(this.mNodes.contains(node))) {
 			return null;
@@ -50,11 +74,14 @@ public class Graph implements IGraph {
 	}
 
 	@Override
+<<<<<<< HEAD
+=======
 	public int getNumberOfNodes() {
 		return this.mNodes.size();
 	}
 
 	@Override
+>>>>>>> 9f240fb4e33939fb8a58bcf5298284eed55239e0
 	public IEdge addEdge(IEdge edge) {
 		if(this.hasEdge(edge)) {
 			return null;
@@ -89,6 +116,14 @@ public class Graph implements IGraph {
 		}
 		return null;
 	}
+<<<<<<< HEAD
+	
+	@Override
+	public boolean hasNode(INode node) {
+		return this.mNodes.contains(node);
+	}
+=======
+>>>>>>> 9f240fb4e33939fb8a58bcf5298284eed55239e0
 
 	@Override
 	public boolean hasEdge(IEdge edge) {
@@ -99,6 +134,14 @@ public class Graph implements IGraph {
 	}
 
 	@Override
+<<<<<<< HEAD
+	public int getNumberOfNodes() {
+		return this.mNodes.size();
+	}
+	
+	@Override
+=======
+>>>>>>> 9f240fb4e33939fb8a58bcf5298284eed55239e0
 	public int getNumberOfEdges() {
 		return this.mEdges.size();
 	}
@@ -111,6 +154,8 @@ public class Graph implements IGraph {
 				break;
 		return this.mNodes.get(i);
 	}
+<<<<<<< HEAD
+=======
 	@Override
 	public List<INode> getNodeSet() {
 		return this.mNodes;
@@ -120,4 +165,5 @@ public class Graph implements IGraph {
 	public List<IEdge> getEdgeSet() {
 		return this.mEdges;
 	}
+>>>>>>> 9f240fb4e33939fb8a58bcf5298284eed55239e0
 }

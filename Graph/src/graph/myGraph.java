@@ -6,6 +6,22 @@ public class myGraph{
 	public static void main(String[] args)
 	{
 		//NEXT- get nodes and edges from the text file into graph
+<<<<<<< HEAD
+		StateChart stateChart = null;
+		State rootState = new State(stateChart);
+		rootState.setName("0");
+		stateChart = (StateChart)rootState.getStateChart();	//((State)rootState).
+		//stateChart = new Graph(root);
+		//Make a graph
+		for(int i=0;i<10;i++)
+			new State(stateChart);	//addNode(graph);	//TODO
+		
+		addTransition(stateChart,0,2);
+		addTransition(stateChart,0,3);
+		addTransition(stateChart,1,4);		//disconnected
+		addTransition(stateChart,3,5);
+		addTransition(stateChart,5,2);
+=======
 		IGraph graph = null;
 		INode root = new Node(graph);
 		graph = root.getGraph();
@@ -19,6 +35,7 @@ public class myGraph{
 		addEdge(graph,1,4);		//disconnected
 		addEdge(graph,3,5);
 		addEdge(graph,5,2);
+>>>>>>> 9f240fb4e33939fb8a58bcf5298284eed55239e0
 		/*
 		System.out.println("Nodes in the graph : " + graph.getNodeSet().toString());
 		System.out.println("Edges in the graph are as follows: ");
@@ -26,10 +43,17 @@ public class myGraph{
 			System.out.println("Edge Id "+ graph.getEdgeSet().get(i).getEdgeId()+" : "+ graph.getEdgeSet().get(i).getTail().getId()+ " "+graph.getEdgeSet().get(i).getHead().getId());
 		*/
 		DFSRecursionTesting test = new DFSRecursionTesting();
+<<<<<<< HEAD
+		test.dfs(stateChart, rootState);
+	}
+	
+	private static void addTransition(IGraph graph, int src, int dest)
+=======
 		test.dfs(graph, root);		
 	}
 	
 	private static void addEdge(IGraph graph, int src, int dest)
+>>>>>>> 9f240fb4e33939fb8a58bcf5298284eed55239e0
 	{
 		INode tail=graph.getNodeById(src);
 		INode head=graph.getNodeById(dest);
