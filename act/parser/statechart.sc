@@ -1,4 +1,4 @@
-SYSTEM : sys{
+SYSTEM  sys{
 	
 	STATE : s1{}
 	STATE : s2{} 
