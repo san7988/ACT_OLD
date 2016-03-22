@@ -11,7 +11,7 @@ import graph.INode;
  */
 public class Edge implements IEdge {
 
-<<<<<<< HEAD
+
 	protected IGraph mGraph;		
 	protected INode mTail; 		//source
 	protected INode mHead; 		//target
